@@ -106,14 +106,13 @@ const App = () => {
           />
 
           <Inputs
-            label="Hora da coleta"
+            label="Hora"
             name="hora"
             placeholder="00:00"
             register={register}
             required
             error={errors.hora && "Hora obrigatória*"}
           />
-
 
           <Inputs
             label="Turbilão"
@@ -224,8 +223,7 @@ const App = () => {
 
           />
           <div className="box-response">
-         {/* Renderização condicional do botão */}
-         {isSending ? ( // Se estiver enviando, exibe o botão de "Enviando dados"
+         {isSending ? (
             <Stack direction='row' margin={5}>
               <Button
                 isLoading
@@ -236,7 +234,7 @@ const App = () => {
                 Enviando dados
               </Button>
             </Stack>
-          ) : ( // Caso contrário, exibe o botão "Enviar dados"
+          ) : (
             <Button
               type="submit"
               size='md'

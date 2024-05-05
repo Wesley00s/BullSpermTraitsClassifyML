@@ -117,10 +117,11 @@ class Data:
 
 def get_data():
     conn = psycopg2.connect(
-        dbname="classify",
+        dbname="railway",
         user="postgres",
-        password="123456",
-        host="localhost"
+        password="CArBbfxiDbtRNuZVSCeMVQMEJZeMeCDk",
+        host="viaduct.proxy.rlwy.net",
+        port="16546"
     )
 
     data = pd.read_sql("SELECT * FROM DATA_CLASSIFY;", conn)
@@ -130,10 +131,11 @@ def get_data():
 
 def add_data(alvo, hora):
     conn = psycopg2.connect(
-        dbname="classify",
+        dbname="railway",
         user="postgres",
-        password="123456",
-        host="localhost"
+        password="CArBbfxiDbtRNuZVSCeMVQMEJZeMeCDk",
+        host="viaduct.proxy.rlwy.net",
+        port="16546"
     )
     cursor = conn.cursor()
 
@@ -164,10 +166,11 @@ class Connect:
     @staticmethod
     def get_data_to_classify():
         conn = psycopg2.connect(
-            dbname="classify",
+            dbname="railway",
             user="postgres",
-            password="123456",
-            host="localhost"
+            password="CArBbfxiDbtRNuZVSCeMVQMEJZeMeCDk",
+            host="viaduct.proxy.rlwy.net",
+            port="16546"
         )
 
         cursor = conn.cursor()

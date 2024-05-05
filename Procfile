@@ -1,1 +1,0 @@
-web: java -jar build/libs/SpermTraitsClassify-0.0.1-SNAPSHOT.jar
