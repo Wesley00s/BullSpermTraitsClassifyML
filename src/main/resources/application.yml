@@ -1,11 +1,11 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
-    username: ${PGUSER}
-    password: ${PGPASSWORD}
-#    url: jdbc:postgresql://viaduct.proxy.rlwy.net:16546/railway
-#    username: postgres
-#    password: CArBbfxiDbtRNuZVSCeMVQMEJZeMeCDk
+#    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+#    username: ${PGUSER}
+#    password: ${PGPASSWORD}
+    url: jdbc:postgresql://viaduct.proxy.rlwy.net:16546/railway
+    username: postgres
+    password: CArBbfxiDbtRNuZVSCeMVQMEJZeMeCDk
   flyway:
     baseline-on-migrate: true
   jpa:
