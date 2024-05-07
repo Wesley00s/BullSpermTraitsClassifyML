@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Docker Image" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+    <deployment type="docker-image">
+      <settings>
+        <option name="imageTag" value="application_classify:v1" />
+        <option name="containerName" value="bulls-semen-classify" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>

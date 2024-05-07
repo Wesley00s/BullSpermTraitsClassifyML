@@ -42,16 +42,16 @@ def classify(data_instance):
     add_data(alvo, hora)
 
     if prediction[0] == 0.0:
-        print(f"Animal totalmente apto à reprodução, com a precisão de {acc * 100:.2f}%")
-        return 'Animal totalmente apto à reprodução', acc
+        print(f"Animal totalmente apto a reproducao, com a precisão de {acc * 100:.2f}%")
+        return 'Animal totalmente apto a reprodução', acc
     elif prediction[0] == 1.0:
-        print(f"Animal apto à reprodução, porém, com restrições, com a precisão de {acc * 100:.2f}%")
+        print(f"Animal apto a reproducao, porem, com restricoes, com a precisao de {acc * 100:.2f}%")
         return 'Animal apto à reprodução, porém com restrições', acc
     elif prediction[0] == 3.0:
-        print(f"Animal não apto à reprodução, com a precisão de {acc * 100:.2f}%")
-        return 'Animal não apto à reprodução', acc
+        print(f"Animal nao apto a reproducao, com a precisao de {acc * 100:.2f}%")
+        return 'Animal nao apto a reproducao', acc
     else:
-        print("Prediction not recognized")
+        print("Erro no processamento dos dados")
         return 'Prediction not recognized', acc
 
 

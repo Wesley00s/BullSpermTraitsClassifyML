@@ -25,7 +25,7 @@ class ServiceController(
     }
 
     fun execVerify(): String {
-        val command = listOf("/bin/bash", "-c", "source /home/wesley/kotlinProjects/SpermTraitsClassify/src/main/python/SpermTraitsPy/venv/bin/activate && python3 /home/wesley/kotlinProjects/SpermTraitsClassify/src/main/python/SpermTraitsPy/RandomForestModel.py")
+        val command = listOf("/bin/bash", "-c", "source /app/src/main/python/SpermTraitsPy/venv/bin/activate && python3 /app/src/main/python/SpermTraitsPy/RandomForestModel.py")
 
         val processBuilder = ProcessBuilder(command)
         processBuilder.redirectErrorStream(true)
